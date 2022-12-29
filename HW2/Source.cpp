@@ -16,7 +16,7 @@ void signature(Mat image);
 
 int main(int argc, char** argv)
 {
-    //Ū��
+    //Åª¹Ï
 
     if (argc != 2)
     {
@@ -69,35 +69,6 @@ void nearest_neighbor(Mat image) {
     imshow("Nearest_neighbor", out); 
     waitKey(0);   
 }
-
-void linear(Mat image) {
-
-    int w = image.cols;
-    int h = image.rows;
-    int channel = image.channels();
-
-    int new_width = w * 3;
-    int new_height = h * 3;
-    int prex, prey;
-    int val = 0;
-
-    Mat out(new_height, new_width, CV_8UC3);
-
-    for (int y = 0; y < new_height; y++) {
-
-        for (int x = 0; x < new_width; x++) {
-
-            
-            val;
-            out.at<uchar>(y, x) = val;
-            
-        }
-    }
-    namedWindow("Linear", WINDOW_AUTOSIZE); 
-    imshow("Linear", out); 
-    waitKey(0);       
-}
-
 void to_Graylabel(Mat image) {
 
     int w = image.cols;
