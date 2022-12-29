@@ -9,7 +9,6 @@ using namespace std;
 
 
 void nearest_neighbor(Mat image);
-void linear(Mat image);
 void to_Graylabel(Mat image);
 void to_Graylabel_sobel_filter(Mat image);
 void signature(Mat image);
